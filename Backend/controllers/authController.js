@@ -6,7 +6,7 @@ const generateToken = (id)=>{
     return jwt.sign({id},process.env.JWT_SECRET, { expiresIn: '1h'
         });
 };
-const frontend_Url = "https://expense-tracker-1-yqg5.onrender.com"
+
 //Register User
 const registerUser = async (req, res) => {
     const { fullName, email, password, profileImageUrl} = req.body;
