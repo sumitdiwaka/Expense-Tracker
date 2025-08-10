@@ -16,7 +16,7 @@ const app = express();
 //MiddleWare To Handle CORS
 app.use(
     cors({
-        origin: process.env.CLIENT_URL || "*",
+        origin:'https://expense-tracker-1-yqg5.onrender.com',
         methods: ["GET", "POST", "PUT", "DELETE"],
         allowedHeaders: ["Content-Type", "Authorization"],
     })
